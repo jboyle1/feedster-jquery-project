@@ -18,6 +18,8 @@ $(document).ready(() => {
         let remaining = 140 - post.length;
         if (remaining <= 0) {
             $('.wordcount').addClass('red');
+        } else {
+            $('.wordcount').removeClass('red');
         }
         $('.characters').html(remaining);
     });
