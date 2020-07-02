@@ -5,5 +5,9 @@ $(document).ready(() => {
 
     $('.nav-menu').on('mouseleave', () => {
         $('.nav-menu').hide();
+    });
+
+    $('.btn').on('mouseenter', event => {
+        $(event.curretTarget).addClass('btn-hover');
     })
 });
