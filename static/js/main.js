@@ -7,7 +7,9 @@ $(document).ready(() => {
         $('.nav-menu').hide();
     });
 
-    $('.btn').on('mouseenter', event => {
-        $(event.curretTarget).addClass('btn-hover');
-    })
+    $('.btn').on('mouseenter', (event) => {
+        $(event.currentTarget).addClass('btn-hover').on('mouseleave', (event) => {
+            $(event.currentTarget).removeClass('btn-hover');
+        });
+    });
 });
