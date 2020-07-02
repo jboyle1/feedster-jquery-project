@@ -14,7 +14,7 @@ $(document).ready(() => {
     });
 
     $('post-text').on('keyup', () => {
-
+        
     });
-
+    $('.postText').focus();
 });
