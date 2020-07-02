@@ -12,4 +12,9 @@ $(document).ready(() => {
             $(event.currentTarget).removeClass('btn-hover');
         });
     });
+
+    $('post-text').on('keyup', () => {
+
+    });
+
 });
