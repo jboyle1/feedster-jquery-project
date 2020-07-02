@@ -13,9 +13,10 @@ $(document).ready(() => {
         });
     });
 
-    $('post-text').on('keyup', (event) => {
+    $('.postText').on('keyup', (event) => {
         let post = $(event.currentTarget).val();
         let remaining = 140 - post.length;
+        $('.characters').html(remaining);
     });
 
     $('.postText').focus();
