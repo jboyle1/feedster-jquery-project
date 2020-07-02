@@ -13,8 +13,9 @@ $(document).ready(() => {
         });
     });
 
-    $('post-text').on('keyup', () => {
-        
+    $('post-text').on('keyup', (event) => {
+        let post = $(event.currentTarget).val();
     });
+
     $('.postText').focus();
 });
